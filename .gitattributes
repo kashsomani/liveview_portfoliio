@@ -1,2 +1,2 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+hello/assets/css/daisy.css linguist-vendored
+*.heex linguist-language=HTML
