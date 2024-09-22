@@ -2,7 +2,9 @@ defmodule LiveviewPortfoliioWeb.ErrorJSONTest do
   use LiveviewPortfoliioWeb.ConnCase, async: true
 
   test "renders 404" do
-    assert LiveviewPortfoliioWeb.ErrorJSON.render("404.json", %{}) == %{errors: %{detail: "Not Found"}}
+    assert LiveviewPortfoliioWeb.ErrorJSON.render("404.json", %{}) == %{
+             errors: %{detail: "Not Found"}
+           }
   end
 
   test "renders 500" do

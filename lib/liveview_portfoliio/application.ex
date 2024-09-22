@@ -9,7 +9,8 @@ defmodule LiveviewPortfoliio.Application do
   def start(_type, _args) do
     children = [
       LiveviewPortfoliioWeb.Telemetry,
-      {DNSCluster, query: Application.get_env(:liveview_portfoliio, :dns_cluster_query) || :ignore},
+      {DNSCluster,
+       query: Application.get_env(:liveview_portfoliio, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: LiveviewPortfoliio.PubSub},
       # Start the Finch HTTP client for sending emails
       {Finch, name: LiveviewPortfoliio.Finch},

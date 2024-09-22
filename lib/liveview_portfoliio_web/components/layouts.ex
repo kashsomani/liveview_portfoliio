@@ -12,7 +12,7 @@ defmodule LiveviewPortfoliioWeb.Layouts do
 
   embed_templates "layouts/*"
 
-   def current_year do
+  def current_year do
     DateTime.utc_now().year
   end
 end
