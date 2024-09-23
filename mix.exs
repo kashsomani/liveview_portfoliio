@@ -9,7 +9,17 @@ defmodule LiveviewPortfoliio.MixProject do
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      releases: releases()
+    ]
+  end
+
+  def releases do
+    [
+      liveview_portfoliio: [
+        include_executables_for: [:unix],
+        steps: [:assemble, :tar]
+      ]
     ]
   end
 
@@ -19,7 +29,7 @@ defmodule LiveviewPortfoliio.MixProject do
   def application do
     [
       mod: {LiveviewPortfoliio.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :ssl]
     ]
   end
 
