@@ -4,19 +4,81 @@
 @import "./daisy.css";
 
 .btn {
-  text-transform: none !important;
+    text-transform: none !important;
 }
-.btn-kash{
+.btn-kash {
     background-color: #ffffff;
     border-radius: 20px;
     color: #000;
     transition: all;
     transition-duration: 500ms;
 }
-.btn-kash:hover{
+.btn-kash:hover {
     background-color: #000000;
     color: #ffffff;
     border: 1px solid #ffffff;
     transition: all;
     transition-duration: 500ms;
+}
+
+.hljs {
+    all: unset !important;
+    color: #24b5d2 !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+}
+.hljs-subst {
+    color: black !important;
+}
+.hljs-attr {
+    color: #d570bf !important;
+}
+.hljs-function {
+    color: #e6ab2c !important;
+}
+.hljs-params {
+    color: #d570bf !important;
+}
+.hljs-keyword {
+    color: #e63c5e !important;
+}
+.hljs-title {
+    color: #ac5ded !important;
+}
+.hljs-string {
+    color: #04b995 !important;
+}
+.hljs-built_in {
+    color: #ac5ded !important;
+}
+.hljs-number {
+    color: #e6ab2c !important;
+}
+
+.code-red {
+    color: #e63c5e;
+}
+.code-green {
+    color: #04b995;
+}
+.code-blue {
+    color: #24b5d2;
+}
+.code-yellow {
+    color: #e6ab2c;
+}
+.code-purple {
+    color: #ac5ded !important;
+}
+.code-pink {
+    color: #d570bf;
+}
+.code-light-green {
+    color: #3cc6bc;
+}
+.code-gray {
+    color: #6f6d6d;
+}
+pre {
+    font-size: 1rem !important;
 }

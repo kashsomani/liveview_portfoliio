@@ -11,8 +11,17 @@
     <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
     </script>
     <link rel="icon" type="image/x-icon" href={~p"/images/logo-md.png"} />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    />
   </head>
   <body class=" min-h-full flex flex-col" data-theme="black">
     <%= @inner_content %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js">
+    </script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>
